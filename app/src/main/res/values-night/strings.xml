@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="submit">Submit</string>
+    <string name="select_category">Select Category</string>
+    <string name="category_list">Category List</string>
+    <string name="close">close</string>
+</resources>
