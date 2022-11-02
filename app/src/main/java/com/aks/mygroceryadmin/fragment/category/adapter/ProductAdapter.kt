@@ -11,6 +11,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -40,16 +41,24 @@ class ProductAdapter : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() 
         private val productName: TextView = itemView.findViewById(R.id.productName)
         private val productMenu: ImageButton = itemView.findViewById(R.id.productMenu)
         private val productAvailability: TextView = itemView.findViewById(R.id.productStock)
+        private val txtIsSellingFast: TextView = itemView.findViewById(R.id.txtIsSellingFast)
         fun bind(productModel: ProductModel,position:Int) {
             Glide.with(productImage.context).load(productModel.imageUrl).placeholder(R.drawable.image).error(R.drawable.image)
                 .into(productImage)
             productName.text = productModel.name
             if (productModel.isProductOutOfStock==true) {
                 productAvailability.text = "Out of Stock"
-                productAvailability.setTextColor(Color.RED)
+                productAvailability.background = ContextCompat.getDrawable(productAvailability.context,R.drawable.background_rounded_red)
+                productAvailability.setTextColor(ContextCompat.getColor(productAvailability.context,R.color.red))
             }else{
                 productAvailability.text = "In Stock"
-                productAvailability.setTextColor(Color.GREEN)
+                productAvailability.setTextColor(ContextCompat.getColor(productAvailability.context,R.color.green))
+                productAvailability.background = ContextCompat.getDrawable(productAvailability.context,R.drawable.background_rounded_green)
+            }
+            if (productModel.isSellingFast == true){
+                txtIsSellingFast.text = "Selling Fast"
+            }else{
+                txtIsSellingFast.visibility = View.GONE
             }
             itemView.setOnClickListener {
                 callBack?.invoke(productModel,position)

@@ -37,12 +37,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
             <ImageView
                 android:id="@+id/imageClose"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:backgroundTint="@color/pure_white"
                 android:contentDescription="@string/close"
                 android:src="@drawable/ic_baseline_close"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="10dp"
+                android:padding="5dp"
+                android:background="@drawable/rounded_background"
                 app:layout_constraintBottom_toBottomOf="@+id/textAddCategory"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

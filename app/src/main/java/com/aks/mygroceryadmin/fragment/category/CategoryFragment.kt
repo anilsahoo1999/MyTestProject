@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.location.Address
 import android.location.Geocoder
 import android.location.Location
@@ -51,6 +52,8 @@ class CategoryFragment : BaseFragment<FragmentCategoryBinding>() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        requireActivity().window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_IMMERSIVE or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
+        requireActivity().window.statusBarColor = Color.parseColor("#FF9800")
         fusedLocationProviderClient = FusedLocationProviderClient(requireContext())
         sharedPreferences = SharedPreference(requireContext())
         (activity as BaseActivity).bottomNavView.visibility = View.VISIBLE

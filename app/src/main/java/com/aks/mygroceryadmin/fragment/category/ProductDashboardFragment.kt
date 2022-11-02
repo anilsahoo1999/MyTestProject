@@ -3,6 +3,7 @@ package com.aks.mygroceryadmin.fragment.category
 import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.View
 import android.widget.Toast
@@ -28,7 +29,7 @@ private const val ARG_PARAM2 = "param2"
  * Use the [ProductDashboardFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ProductDashboardFragment : BaseFragment<FragmentProductDashboardBinding>() {
+class ProductDashboardFragment : BaseFragment<FragmentProductDashboardBinding>(){
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -133,6 +134,15 @@ class ProductDashboardFragment : BaseFragment<FragmentProductDashboardBinding>()
         }
         productAdapter.setOnMenuEditClickListener { productModel, _ ->
             editProduct(productModel)
+        }
+        binding.swipeRefresh.setOnRefreshListener {
+            getAllProductDetails()
+            Handler().postDelayed({
+                binding.swipeRefresh.isRefreshing = false
+            },4000)
+        }
+        binding.imageBack.setOnClickListener{
+            findNavController().popBackStack()
         }
     }
 

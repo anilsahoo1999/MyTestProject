@@ -8,7 +8,8 @@
     <color name="pure_gray">#999999</color>
     <color name="pure_white">#FFFFFFFF</color>
     <color name="green">#1d9106</color>
-    <color name="orange">#915206</color>
+    <color name="red">#F42525</color>
+    <color name="orange">#FF9800</color>
     <color name="orange_lite">#D57707</color>
     <color name="transparent">#2ACDCBC8</color>
 </resources>
