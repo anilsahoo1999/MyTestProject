@@ -53,20 +53,8 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>() {
         }
         win.attributes = winParams
     }
-    private fun performOnClickEvent(){
-        binding.btnMenu.setOnClickListener {
-            val popupMenu = PopupMenu(requireContext(),binding.btnMenu)
-            popupMenu.menuInflater.inflate(R.menu.profile_menu,popupMenu.menu)
-            popupMenu.setOnMenuItemClickListener {
-                when(it.itemId){
-                    R.id.btnLogout->{
-                        Toast.makeText(requireContext(),"Signout Successfully",Toast.LENGTH_SHORT).show()
-                    }
-                }
-                true
-            }
-            popupMenu.show()
-        }
+    private fun performOnClickEvent() {
+
     }
 
     private fun getProfileDetails() {

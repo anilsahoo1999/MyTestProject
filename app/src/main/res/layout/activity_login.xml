@@ -10,30 +10,75 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#3E3E70"
         tools:context=".activity.LoginActivity">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/store"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/txtAppName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:textSize="30sp"
+            android:id="@+id/txtAppName"
+            android:fontFamily="serif"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/txtDescription"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_description"
+            android:textColor="@color/white"
+            android:focusable="true"
+            android:textSize="17sp"
+            android:id="@+id/txtDescription"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardLogin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="15dp"
-            app:cardElevation="10dp"
-            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="2dp"
+            android:minHeight="50dp"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#5C5C8B"
+            android:layout_marginBottom="30dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintStart_toStartOf="parent">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:padding="15dp"
                 android:textSize="17sp"
                 android:layout_gravity="center"
                 android:text="@string/login_with_google"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:drawablePadding="30dp"
                 app:drawableLeftCompat="@drawable/google_icon" />
+
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

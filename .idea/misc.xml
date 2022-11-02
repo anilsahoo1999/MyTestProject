@@ -45,6 +45,8 @@
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/drawable/profile_background_drawable.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/drawable/rounded_background.xml" value="0.158" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/drawable/rounded_background_white.xml" value="0.158" />
+        <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/activity_login.xml" value="0.13424540401881147" />
+        <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/activity_splash_screen.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/complete_profile.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/fragment_add_banner.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/fragment_add_category.xml" value="0.13424540401881147" />
@@ -54,6 +56,7 @@
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/fragment_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/pop_up_message_dialog.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/layout/product_list_item.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/menu/action_product_menu.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/menu/menu.xml" value="0.13424540401881147" />
         <entry key="..\:/AndroidStudioProject/KotlinProject/MySampleTestProject/app/src/main/res/menu/profile_menu.xml" value="0.1333903377511757" />
         <entry key="..\:/Anil ISU Demo/MyGroceryAdmin/app/src/main/res/drawable/google_icon.xml" value="0.1405" />

@@ -35,4 +35,8 @@
     <string name="add_delivery_boy">Add delivery boy</string>
     <string name="rate_app">Rate app</string>
     <string name="select_language">Select language</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="logout">Logout</string>
+    <string name="txt_description">Find your perfect place for eat, meet and book it everywhere</string>
 </resources>
