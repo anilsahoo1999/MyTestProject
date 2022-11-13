@@ -3,6 +3,7 @@ package com.aks.mygroceryadmin.utils
 object Constants {
     const val USER_ID="userId"
     const val USERNAME="username"
+    const val STORE_NAME="storeName"
     const val CUSTOMER_ID="customerId"
     const val USER_MAIL_ID="userMailId"
     const val PROFILE_LINK="profileLink"

@@ -28,7 +28,7 @@ class SplashScreenActivity : AppCompatActivity() {
         sharedPreference = SharedPreference(this)
         binding.lottie.addAnimatorListener(listener)
     }
-    val listener = object: Animator.AnimatorListener {
+    private val listener = object: Animator.AnimatorListener {
         override fun onAnimationStart(p0: Animator?) {
             Log.d("TAG", "onAnimationStart")
         }

@@ -24,7 +24,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/orange_lite"
+                android:background="@color/white"
                 app:contentInsetLeft="0dp"
                 app:contentInsetStart="0dp"
                 app:contentInsetStartWithNavigation="0dp">
@@ -41,7 +41,8 @@
                         android:layout_height="match_parent"
                         android:contentDescription="@string/back_button"
                         android:padding="10dp"
-                        android:src="@drawable/ic_baseline_arrow_back_24" />
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:tint="@color/black" />
 
                     <TextView
                         android:id="@+id/title"
@@ -51,9 +52,10 @@
                         android:layout_toEndOf="@+id/imageBack"
                         android:focusable="true"
                         android:fontFamily="sans-serif"
-                        android:gravity="center_vertical"
+                        android:gravity="center"
+                        android:layout_marginEnd="48dp"
                         android:text="Manage Product"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="17sp" />
 
                 </RelativeLayout>
@@ -104,9 +106,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="16dp"
-            android:contentDescription="fab"
-            app:backgroundTint="@color/white"
-            android:src="@android:drawable/ic_input_add"
+            android:contentDescription="@string/fab"
+            android:src="@drawable/ic_baseline_add_24"
+            android:tint="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:rippleColor="@color/white" />

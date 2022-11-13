@@ -1,6 +1,5 @@
 package com.aks.mygroceryadmin.fragment.category.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,7 +9,6 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.aks.mygroceryadmin.R
-import com.aks.mygroceryadmin.models.CategoryModel
 import com.aks.mygroceryadmin.models.PricePerKgModel
 
 class PriceItemAdapter : RecyclerView.Adapter<PriceItemAdapter.ViewHolder>(){

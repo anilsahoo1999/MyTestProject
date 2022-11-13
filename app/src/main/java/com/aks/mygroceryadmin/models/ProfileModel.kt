@@ -11,4 +11,5 @@ data class ProfileModel(
     var userLatLng: String? = null,
     val photoUrl: String? = null,
     var userMobileNo: String? = null,
+    val storeName : String? = null
 ):Serializable

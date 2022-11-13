@@ -14,21 +14,33 @@
         >
 
 
-        <com.intrusoft.library.FrissonView
-            android:id="@+id/wave_head"
+<!--        <com.intrusoft.library.FrissonView-->
+<!--            android:id="@+id/wave_head"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="300dp"-->
+<!--            frisson:alphaValue="30"-->
+<!--            frisson:tintColor="#DC000000"-->
+<!--            frisson:gradientType="linear"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            frisson:gradient_endColor="#cc000000"-->
+<!--            frisson:gradient_startColor="#00000000"-->
+<!--            frisson:src="@drawable/profile_background_image"-->
+<!--            frisson:tideCount="3"-->
+<!--            frisson:tideHeight="45dp" />-->
+
+
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            frisson:alphaValue="30"
-            frisson:tintColor="#DC000000"
-            frisson:gradientType="linear"
+            android:src="@drawable/profile_background_image"
+            android:scaleType="fitXY"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            frisson:gradient_endColor="#cc000000"
-            frisson:gradient_startColor="#00000000"
-            frisson:src="@drawable/profile_background_image"
-            frisson:tideCount="3"
-            frisson:tideHeight="45dp" />
+            android:id="@+id/wave_head"/>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -51,7 +63,7 @@
                     android:id="@+id/imageViewBackground"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    android:layout_marginTop="80dp"
+                    android:layout_marginTop="70dp"
                     android:background="@drawable/rounded_background_white"
                     app:layout_constraintTop_toTopOf="parent"/>
                 <com.google.android.material.imageview.ShapeableImageView
